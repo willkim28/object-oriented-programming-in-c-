@@ -1,0 +1,10 @@
+
+In line number 30 of your output:
+The output should be:
+ Unit: abc
+But your output is: 
+ab Unit: c
+^
+|
+Professor's character ASCII code: hex(20), dec(32)
+un-matched character ASCII code: hex(61), dec(97)

@@ -1,0 +1,31 @@
+// Workshop 2
+// Name: Woohyun Kim
+// Student #: 122733157
+// Course: OOP244 Fall 2018
+// File: reflect.txt
+
+1.
+-Arrays are stored in consecutive memory
+-The memory following immediately after the array may be allocated for something else
+-When increasing the size of an array, the new memory allocation may conflict with the existing ones
+
+2.
+-Being a static array, and not a dynamically allocated array, the programmer does not need to be responsible for the deallocation
+-The compiler will deallocate the array automatically upon runtime end
+
+3.
+-The compiler preserves function signature through a mix of its identifier/parameter types/parameter order (mangling)
+-Upon function call, the compiler will try to match the three constituents of the signatures
+-Copmiler will only fail to call the correct function when the signature is ambiguous (returns error)
+
+4.
+-Function overloading implementation
+-Usage of pointers to allocate/deallocate dynamic memory
+-Continuation of ws1, endl != end1
+
+Quiz 1 Reflection:
+1. What is the one definition rule?
+-One definition rule means a definition may only appear once within its SCOPE
+
+3. With respect to scope, what is shadowing?
+-Identifier declared with an inner scope can shadow an identifier declared with a broader scope, making the latter temporarily inaccessible (variable gets "shadowed")
