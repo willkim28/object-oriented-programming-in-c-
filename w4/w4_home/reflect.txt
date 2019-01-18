@@ -1,0 +1,42 @@
+// Workshop 4
+// Name: Woohyun Kim
+// Student #: 122733157
+// Course: OOP244 Fall 2018
+// File: reflect.txt
+
+1. What is a safe empty state? Could you define a safe empty state that differs from the empty state that you defined?
+
+A safe empty state is initializing object so that the code will know that the object is not yet defined (as compared to containing an undefined value, then adding a number to it).
+It ensures that the initialized object will not contain "garbage" values.
+
+
+2. Identify the parts of your source code where to minimized code duplication.
+
+In the first 2 parameter constructor (Passenger), I have used *this, instead of listing out the individual objects.
+While not minimizing, usage of bool flags for condition checking has simplified my code.
+
+
+3. The canTravelWith(...) member function accesses the private data of the object referenced in its parameter. Explain why C++ allows this access.
+
+The object was passed as a reference by the member function which is of the same class.
+Being passed as a const reference does not allow the user to manipulate the object for further security.
+
+
+4. What statement did you add to ensure that the strncpy(...) function executes correctly?
+#include <cstring> to include the cstring library.
+
+
+5. Explain what you have learned in this workshop.
+- Overloading constructor functions which also help with variable validation
+- Usage of C++ cstring library
+
+Quiz 3 Reflection
+
+1. Explain the purpose of the keywords this and *this?
+- this returns the address of the current object (pointer)
+  - operations on this change the local object (changes persist)
+- *this refers to the current object itself (dereferenced pointer)
+  - operations on *this do not change the local object (only on a copy)
+
+3. Which of the folowing is false of a constructor?
+It may contain a return type
