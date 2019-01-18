@@ -1,0 +1,10 @@
+
+In line number 13 of your output:
+The output should be:
+The Maximum Violent Crime rate was 506
+But your output is: 
+The Minimum Violent Crime rate was 506
+     ^
+-----|
+Professor's character ASCII code: hex(61), dec(97)
+un-matched character ASCII code: hex(69), dec(105)

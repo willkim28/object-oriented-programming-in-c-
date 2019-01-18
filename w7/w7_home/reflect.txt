@@ -1,0 +1,37 @@
+// Workshop 7
+// Name: Woohyun Kim
+// Student #: 122733157
+// Course: OOP244 Fall 2018
+// File: reflect.txt
+
+1. Does the Hero class need to know about the existence of the SuperHero class?
+No, a Hero is NOT a kind of SuperHero.
+
+2. Does the SuperHero class need to know about the existence of the Hero class?
+Yes, since SuperHero is derived FROM the Hero class
+
+3. The program prints out "Ancient Battle!" when two Heroes fight. It prints out "Super Fight!" when two SuperHeroes fight. When you made a Hero fight a SuperHero, what did it print out?
+"Ancient Battle!", since it's SuperHeroes are only treated as SuperHeroes when two SuperHeroes fight each other.
+
+4. True or False: is the following definition for main valid? Explain.
+int main() {
+    Hero("Achilles", 20, 6) * Hero("Hector", 30, 5);
+}
+True, explanation at 5.
+Output:
+Achilles vs Hector
+
+5. True or False: is the following definition for main valid? Explain.
+int main() {
+    (Hero("Achilles", 20, 6) * Hero("Hector", 30, 5))
+                             *
+    (Hero("Atalanta", 10, 3) * Hero("Hippolyta", 10, 2));
+}
+True, objects will be created as the constructors are called.
+Output:
+Atalanta vs Hippolyta
+Achilles vs Hector
+Hector vs Atalanta
+
+Quiz Reflection:
+There was no quiz for last week.. hopefully.

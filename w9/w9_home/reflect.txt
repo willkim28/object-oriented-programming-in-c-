@@ -1,0 +1,35 @@
+// Workshop 9
+// Name: Woohyun Kim
+// Student #: 122733157
+// Course: OOP244 Fall 2018
+// File: reflect.txt
+
+1. What happens if you try to put your templated functions in Data.cpp? Does your source code compile if you move all functions to Data.h? Explain.
+
+The compiler will throw an error unless the template code is explicitly instantiated in the cpp.
+
+2. Move one templated function into ws9_lab.cpp. Does it work now? Do you need to define the template function above main(), before it is used, or can you define it below main()?
+No, the max() function is not found.
+
+3. Could you have done this lab without templates, by just overloading your functions in Data.h to accept integer and double arguments? What is the advantage of using templates?
+Yes, but it would not have allowed for a more functional code using the T type variable. By implementing templates, the code was cleaner to read.
+
+4. Are the following equivalent?
+template<class T>
+
+template<typename T>
+Yes
+
+Quiz #7 Reflection
+
+1. What is a template?
+A template is a special function that can operate with GENERIC types.
+
+2. What is a contrained cast?
+Type of casting through template syntax that improves type safety
+
+3. What is the purpose of a const_cast?
+On a function written by another programmer that does not receive a const param but should receive one.
+
+5. True or False, a reinterpret_cast is typically portable?
+True

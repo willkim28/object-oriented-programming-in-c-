@@ -1,0 +1,35 @@
+// Workshop 6
+// Name: Woohyun Kim
+// Student #: 122733157
+// Course: OOP244 Fall 2018
+// File: reflect.txt
+
+1. Why does the copy assignment operator check for self-assignment before doing anything else?
+-If we neglect to check for self assignment, the deallocation statement would release the memory holding the resource data and we would lose access to the source resource.
+
+2. List examples of how you avoided code duplication.
+-isValid() function to check validity
+
+3. List what you have learned in completing this workshop.
+-usage of copy constructors
+-fluency of allocating dynamic array
+
+Quiz 5 Reflection (I did not write this quiz)
+
+1. Shallow copying involves copying the instance variables and resource data.
+False
+
+2. The copy constructor copies data from an existing object to a newly created object.
+True
+
+3. The copy assignment oeprator copies data from an existing object to an existing object.
+True
+
+4. An input file object is an instance of the ifstream class. An output file object is an instance of the ____ class?
+ofstream
+
+5. Certain class designs require prohibiting client code from copying or copy assigning any instance of a class. What can be done to prohibit copying and/or copy assigning?
+add keyword " = delete" at the end of statement.
+
+6. Assigning a temporary object to the current object requires additional code if the object manages resources. What can be done to prevent teh assignment operator from releasing not-as-yet-acquired resources?
+Initialize each resource instance variable to an empty value (nullptr)

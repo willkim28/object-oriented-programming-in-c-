@@ -1,0 +1,23 @@
+// Workshop 5
+// Name: Woohyun Kim
+// Student #: 122733157
+// Course: OOP244 Fall 2018
+// File: reflect.txt
+
+1. The operator+ returns a Fraction object. Explain why this operator should not return a reference to a Fraction object.
+-Since it returns a new object that is the sum of the two objects, returning by reference will not achieve this.
+
+2. List the temporary objects in the w5_at_home.cpp main module.
+-lines 49, 53, 57 (creates a temp object to store the value)
+
+3. List the simplicifations that you made to your class to minimize code duplication
+-I could have set up a isValid() function to check in lieu of isEmpty() + conditions.
+
+4. Explain what you have learned in this workshop.
+-How to overload an operator
+-
+
+Quiz 4 Reflection
+
+6. What is meant by granting friendship to a function?
+Friendship grants helper functions access to the private members of a class, as opposed to free helpers which only obtain information from the public member functions.

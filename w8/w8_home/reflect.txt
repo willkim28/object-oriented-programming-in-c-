@@ -1,0 +1,18 @@
+// Workshop 8
+// Name: Woohyun Kim
+// Student #: 122733157
+// Course: OOP244 Fall 2018
+// File: reflect.txt
+
+1. What is the difference between an abstract base class and a concrete class?
+Abstract class only contains definitions, but no implementations.
+The concrete class is derived from the base class and provides the implementations.
+
+2. Identify the functions that shadow functions of the same name in your solution?
+credit, debit, monthEnd, and display from ChequingAccount class.
+
+3. Explain what you have learned in this workshop.
+I have learned how to derive classes, and implement the methods defined.
+
+Quiz 6 Reflection
+I forgot to pick my quiz up
